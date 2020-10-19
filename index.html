@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="grid.css" />
+    <title>Airbnb</title>
+  </head>
+  <body>
+    <header class="head">
+      <nav class="nav expand" id="nav">
+        <button class="nav__toggle" id="btn"></button>
+        <ul class="nav__menu menu">
+          <li class="menu__item"><a class="menu__link" href="#">Shop</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">About</a></li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Contact us</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="content-wrapper">
+      <div class="content content__wrap">
+        <div class="form">
+          <div class="title">
+            <h1>
+              Бронируйте <br />
+              уникальное жилье
+            </h1>
+          </div>
+          <div class="form-place">
+            <label for="place">ГДЕ</label>
+            <input type="text" id="place" />
+          </div>
+          <div class="form-date">
+            <div class="form-arrival form-row">
+              <label for="arrival">ПРИБЫТИЕ</label>
+              <input type="date" id="arrival" />
+            </div>
+            <div class="form-departure form-row">
+              <label for="departure">ВЫЕЗД</label>
+              <input type="date" id="departure" />
+            </div>
+          </div>
+          <div class="form-people">
+            <div class="form-adults form-row">
+              <label for="adults">ВЗРОСЛЫЕ</label>
+              <input
+                type="number"
+                name="num"
+                id="adults"
+                min="1"
+                max="10"
+                value="1"
+              />
+            </div>
+            <div class="form-childrens form-row">
+              <label for="childrens">ДЕТИ</label>
+              <input
+                type="number"
+                name="num"
+                id="childrens"
+                min="1"
+                max="10"
+                value="1"
+              />
+            </div>
+          </div>
+          <div class="form-btn">
+            <button type="submit" class="btn">Начать поиск</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="page">
+      <div class="page__wrapper">
+        <div class="page__menu">
+          <div class="page__text text">
+            <h2>Жилье Airbnb Plus</h2>
+            <p>Подборка жилья, проверенного на качество и дизайн.</p>
+          </div>
+          <div class="page__pic">
+            <button class="page__btn">
+              НАЙТИ ЖИЛЬЕ
+              <span class="arrow"></span>
+            </button>
+            <img src="./images/plus.png" alt="" class="img__plus" />
+          </div>
+        </div>
+        <div class="card_text text">
+          <h2>Представляем Приключения Airbnb</h2>
+          <p>
+            Многодневные поездки под руководством местных экспертов.
+            <br />
+            Развлечения, питание и проживание включены.
+            <span class="arrow__card"></span>
+          </p>
+        </div>
+        <div class="grid-container">
+          <div class="page__card col-3 col-xs-12">
+            <div class="card__pic">
+              <img src="./images/sydney.png" alt="" />
+            </div>
+            <div class="card__title">
+              <h3>Сидней</h3>
+              <p>4.5</p>
+            </div>
+            <div class="card__text">
+              <p>Убежище в джунглях на прекрасном Бали</p>
+              <p>От 820$ на человека</p>
+            </div>
+            <div class="card__btn">
+              <button>Бронировать</button>
+            </div>
+          </div>
+          <div class="page__card col-3  col-xs-12">
+            <div class="card__pic">
+              <img src="./images/sydney.png" alt="" />
+            </div>
+            <div class="card__title">
+              <h3>Сидней</h3>
+              <p>4.5</p>
+            </div>
+            <div class="card__text">
+              <p>Убежище в джунглях на прекрасном Бали</p>
+              <p>От 820$ на человека</p>
+            </div>
+            <div class="card__btn">
+              <button>Бронировать</button>
+            </div>
+          </div>
+          <div class="page__card col-3 col-xs-12">
+            <div class="card__pic">
+              <img src="./images/sydney.png" alt="" />
+            </div>
+            <div class="card__title">
+              <h3>Сидней</h3>
+              <p>4.5</p>
+            </div>
+            <div class="card__text">
+              <p>Убежище в джунглях на прекрасном Бали</p>
+              <p>От 820$ на человека</p>
+            </div>
+            <div class="card__btn">
+              <button>Бронировать</button>
+            </div>
+          </div>
+          <div class="page__card col-3  col-xs-12">
+            <div class="card__pic">
+              <img src="./images/sydney.png" alt="" />
+            </div>
+            <div class="card__title">
+              <h3>Сидней</h3>
+              <p>4.5</p>
+            </div>
+            <div class="card__text">
+              <p>Убежище в джунглях на прекрасном Бали</p>
+              <p>От 820$ на человека</p>
+            </div>
+            <div class="card__btn">
+              <button>Бронировать</button>
+            </div>
+          </div>
+          <div class="page__card col-3  col-xs-12">
+            <div class="card__pic">
+              <img src="./images/sydney.png" alt="" />
+            </div>
+            <div class="card__title">
+              <h3>Сидней</h3>
+              <p>4.5</p>
+            </div>
+            <div class="card__text">
+              <p>Убежище в джунглях на прекрасном Бали</p>
+              <p>От 820$ на человека</p>
+            </div>
+            <div class="card__btn">
+              <button>Бронировать</button>
+            </div>
+          </div>
+          <div class="page__card col-3 col-none">
+            <div class="card__pic">
+              <img src="./images/Rectangle_6.png" alt="" />
+            </div>
+            <div class="card__title">
+              <h3>Сидней</h3>
+              <p>4.5</p>
+            </div>
+            <div class="card__text">
+              <p>Убежище в джунглях на прекрасном Бали</p>
+              <p>От 820$ на человека</p>
+            </div>
+            <div class="card__btn">
+              <button>Бронировать</button>
+            </div>
+          </div>
+          <div class="page__card col-3 col-none">
+            <div class="card__pic">
+              <img src="./images/sydney.png" alt="" />
+            </div>
+            <div class="card__title">
+              <h3>Сидней</h3>
+              <p>4.5</p>
+            </div>
+            <div class="card__text">
+              <p>Убежище в джунглях на прекрасном Бали</p>
+              <p>От 820$ на человека</p>
+            </div>
+            <div class="card__btn">
+              <button>Бронировать</button>
+            </div>
+          </div>
+          <div class="page__card col-3 col-none">
+            <div class="card__pic">
+              <img src="./images/Rectangle_8.png" alt="" />
+            </div>
+            <div class="card__title">
+              <h3>Сидней</h3>
+              <p>4.5</p>
+            </div>
+            <div class="card__text">
+              <p>Убежище в джунглях на прекрасном Бали</p>
+              <p>От 820$ на человека</p>
+            </div>
+            <div class="card__btn">
+              <button>Бронировать</button>
+            </div>
+          </div>
+        </div>
+        <div class="page__section">
+          <div class="section__title">
+            <h2>Жилье по всему миру</h2>
+            <span class="section__arrow"></span>
+          </div>
+          <div class="grid-container">
+            <div class="section__card col-3 col-xs-12">
+              <div class="section__card__pic">
+                <img src="./images/Austria.png" alt="" />
+              </div>
+              <div class="section__mark">
+                <div class="section__mark_owner">СУПЕР-ХОЗЯИН</div>
+                <div class="section__mark_country">
+                  <p>Австрия</p>
+                </div>
+                <div class="section__mark_star">
+                  <img src="./images/Vector.png" alt="" />
+                </div>
+                <div class="section__mark_rate">4.90</div>
+              </div>
+              <div class="section__text">
+                <p>
+                  Sunny apartment near metro <br />
+                  station.
+                </p>
+              </div>
+            </div>
+            <div class="section__card col-3 col-xs-12">
+              <div class="section__card__pic">
+                <img src="./images/USA.png" alt="" />
+              </div>
+              <div class="section__mark">
+                <div class="section__mark_owner">СУПЕР-ХОЗЯИН</div>
+                <div class="section__mark_country">
+                  <p>США</p>
+                </div>
+                <div class="section__mark_star">
+                  <img src="./images/Vector.png" alt="" />
+                </div>
+                <div class="section__mark_rate">4.82</div>
+              </div>
+              <div class="section__text">
+                <p>
+                  Grand and Cozy 1920's SF Studio
+                </p>
+              </div>
+            </div>
+            <div class="section__card col-3 col-xs-12">
+              <div class="section__card__pic">
+                <img src="./images/Tailand.png" alt="" />
+              </div>
+              <div class="section__mark">
+                <div class="section__mark_country">
+                  <p>Таиланд</p>
+                </div>
+              </div>
+              <div class="section__text">
+                <p>
+                  White Breeze Pool 1BD Apartment
+                </p>
+              </div>
+            </div>
+            <div class="section__card col-3 col-xs-12">
+              <div class="section__card__pic">
+                <img src="./images/GB.png" alt="" />
+              </div>
+              <div class="section__mark">
+                <div class="section__mark_owner">СУПЕР-ХОЗЯИН</div>
+                <div class="section__mark_country">
+                  <p>Великобритания</p>
+                </div>
+              </div>
+              <div class="section__text">
+                <p>
+                  Old Smock Windmill in rural Kent
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="foot">
+      <div class="foot__wrap">
+        <div class="foot__section">
+          <ul>
+            <li class="top__section"><a href="#"> Airbnb</a></li>
+            <li><a href="#">Карьера</a></li>
+            <li><a href="#">Новости</a></li>
+            <li>
+              <a href="#">Правила</a>
+            </li>
+            <li>
+              <a href="#"
+                >Принадлежность, этнокультурные <br />
+                и другие различия</a
+              >
+            </li>
+            <li><a href="#">Доступность</a></li>
+          </ul>
+        </div>
+        <div class="foot__section">
+          <ul>
+            <li class="top__section"><a href="#"> Подробнее о нас</a></li>
+            <li><a href="#">Доверие и безопасность</a></li>
+            <li><a href="#">Бонус на путешествие</a></li>
+            <li>
+              <a href="#">Airbnb Citizen</a>
+            </li>
+            <li>
+              <a href="#">Деловые поездки</a>
+            </li>
+            <li><a href="#">Чем заняться</a></li>
+            <li><a href="#">Airbnbmag</a></li>
+          </ul>
+        </div>
+        <div class="foot__section">
+          <ul>
+            <li class="top__section"><a href="#"> Прием гостей</a></li>
+            <li><a href="#">Почему стоит принимать гостей</a></li>
+            <li><a href="#">Гостеприимство</a></li>
+            <li>
+              <a href="#">Как стать ответственным хозяином</a>
+            </li>
+            <li>
+              <a href="#">Организация Впечатлений</a>
+            </li>
+            <li><a href="#">Open Homes</a></li>
+          </ul>
+        </div>
+        <div class="foot__section">
+          <ul>
+            <li class="top__section"><a href="#"> Поддержка</a></li>
+            <li><a href="#">Поддержка</a></li>
+            <li class="foot__new__row">
+              <a href="#">Поддержка соседей</a>
+              <div class="foot__new">Новинка</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="foot__string"></div>
+      <div class="foot__botom">
+        <div class="botom__img">
+          <img src="./images/Vector_1.png" alt="" />
+        </div>
+        <div class="botom__rights">
+          <p>© 2020 Airbnb, Inc. All rights reserved.</p>
+        </div>
+        <div class="botom__links">
+          <a href="#">Уcловия</a>
+          <a href="#">Конфиденциальность</a>
+          <a href="#">Карта сайта</a>
+        </div>
+        <div class="botom__social">
+          <a href="#">
+            <img src="./images/Vector_fb.png" alt="" />
+          </a>
+          <a href="#">
+            <img src="./images/Vector_vk.png" alt="" />
+          </a>
+          <a href="#">
+            <img src="./images/Vector_tw.png" alt="" />
+          </a>
+          <a href="#">
+            <img src="./images/Vector_inst.png" alt="" />
+          </a>
+        </div>
+      </div>
+    </footer>
+    <script>
+      btn.onclick = () => {
+        nav.classList.toggle("expand");
+      };
+    </script>
+  </body>
+</html>
